@@ -1,0 +1,28 @@
+#!/bin/bash
+
+function brakeConv() {
+    echo "All files you want converted should be the same Height & Width before proceeding"
+    echo "Enter Desired Width: "
+    read HWIDTH
+    echo "Enter Desired Height: "
+    read HHEIGHT
+    for x in `ls -l *.MP4`;
+      do
+        echo $x
+        /path/location/to/HandBrakeCLI -i $x -o $x.m4v -w $HWIDTH -l $HHEIGHT -q 19 -e x264
+      done
+}
+
+
+#======Prompt for Input path=========
+echo "Feed me the folder that you want converted"
+read SRCPATH
+echo "Navigating to $SRCPATH ......"
+
+#==========Navigate and convert all "mp4 to m4v" in path===========
+cd $SRCPATH
+echo "Found the following files for conversion in
+$SRCPATH"\
+\
+ls *.MP4
+brakeConv\
