@@ -2,7 +2,7 @@
 A collection of random bash scripts that have been of use.
 
 ## Contents 
-1. handBrakeAuto - A script to batch convert movies within a directory using HandBrake transcoder on Mac
+1. handBrakeAuto - A script to batch convert MP4 movies to M4V within a directory using HandBrake transcoder on Mac
 
 ## handBrakeAuto 
 
