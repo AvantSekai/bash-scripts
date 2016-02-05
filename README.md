@@ -37,4 +37,4 @@ Enter Desired Width:
 Enter Desired Height:
 1080
 
-Begins to convert each movie
+Begins to convert each movie with verbose settings.
