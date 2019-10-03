@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Searches from the current path recursively for desired text in file
+function find-snip(){
+    find . -type f -exec grep -l "$1" {} + ;
+}
